@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="frontend.css">
+    <title>Filialen</title>
+</head>
+<body>
+<h1>Filialen</h1>
+<ul id="filialen">
+</ul>
+<h1>Detail</h1>
+<dl>
+    <dt>Nummer</dt>
+    <dd id="id"></dd>
+    <dt>Naam</dt>
+    <dd id="naam"></dd>
+    <dt>Gemeente</dt>
+    <dd id="gemeente"></dd>
+    <dt>Omzet</dt>
+    <dd id="omzet"></dd>
+</dl>
+<h1>Nieuw filiaal:</h1>
+<input id="nieuweNaam" required autofocus placeholder="Naam">
+<span id="nieuweNaamFout" class="fout">Verplicht.</span>
+<input id="nieuweGemeente" required placeholder="Gemeente">
+<span id="nieuweGemeenteFout" class="fout">Verplicht.</span>
+<input id="nieuweOmzet" required type="number" min="1" placeholder="Omzet">
+<span id="nieuweOmzetFout" class="fout">Verplicht.</span>
+<button id="toevoegen">Toevoegen</button>
+</body>
+</html>
